@@ -1,0 +1,12 @@
+name: echo
+
+on: [pull_request, workflow_dispatch]
+
+jobs:
+  staging:
+    runs-on: cn
+
+    steps:
+      - name: echo
+        id: echo
+        run: echo "::debug::speak"
